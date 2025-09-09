@@ -24,7 +24,7 @@ export default function Warehouse() {
 
         {/* Image */}
         <motion.img
-          src="/warehouse1.jpg"
+          src={`${import.meta.env.BASE_URL}warehouse1.jpg`}
           alt="Warehouse"
           className="rounded-2xl shadow-lg"
           initial={{ opacity: 0, x: 50 }}

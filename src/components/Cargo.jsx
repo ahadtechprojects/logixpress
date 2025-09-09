@@ -6,7 +6,7 @@ export default function Cargo() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Image */}
         <motion.img
-          src="/cargo-1.jpg"
+          src={`${import.meta.env.BASE_URL}cargo-1.jpg`}
           alt="Cargo Services"
           className="rounded-2xl shadow-lg"
           initial={{ opacity: 0, x: -50 }}

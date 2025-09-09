@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative h-[80vh] flex items-center justify-center text-center text-white"
       style={{
         backgroundImage:
-          "url('/cranes.jpg')",
+          `url(${import.meta.env.BASE_URL}cranes.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

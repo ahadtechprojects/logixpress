@@ -24,7 +24,7 @@ export default function Garage() {
 
         {/* Image */}
         <motion.img
-          src="/garage.jpg"
+          src={`${import.meta.env.BASE_URL}garage.jpg`}
           alt="Fleet Garage"
           className="rounded-2xl shadow-lg"
           initial={{ opacity: 0, x: 50 }}

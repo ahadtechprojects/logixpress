@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // Only named imports
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
@@ -11,7 +11,7 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-    <Router>
+    <>
       <NavBar />
       <main>
         <Routes>
@@ -24,6 +24,6 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
-    </Router>
+    </>
   );
 }

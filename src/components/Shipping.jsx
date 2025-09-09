@@ -6,7 +6,7 @@ export default function Shipping() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Image */}
         <motion.img
-          src="/shipping.jpg"
+          src={`${import.meta.env.BASE_URL}shipping.jpg`}
           alt="Global Shipping"
           className="rounded-2xl shadow-lg"
           initial={{ opacity: 0, x: -50 }}
