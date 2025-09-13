@@ -1,45 +1,52 @@
-import { motion } from "framer-motion";
+// Services.jsx
+import React from "react";
+import { Ship, Truck, Plane, Package } from "lucide-react";
 
 export default function Services() {
-  const services = [
-    { title: "Air Freight", desc: "Fast and secure air cargo solutions worldwide." },
-    { title: "Sea Freight", desc: "Reliable and affordable sea shipping." },
-    { title: "Road Transport", desc: "Efficient delivery across cities and borders." },
-    { title: "Warehousing", desc: "Secure storage and inventory management." },
-  ];
-
   return (
-    <motion.section
-      className="py-20 px-6 max-w-7xl mx-auto"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-    >
-      <motion.h2
-        className="text-3xl font-bold text-center text-blue-700 mb-10"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
-      >
-        Our Services
-      </motion.h2>
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-6 sm:p-10">
+      <div className="max-w-6xl mx-auto space-y-8">
+        <header>
+          <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100">Our Services</h1>
+          <p className="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">
+            We provide comprehensive logistics solutions tailored to businesses seeking seamless connections between India, Korea, and global markets. Our services span across sea, land, and air freight with end-to-end support.
+          </p>
+        </header>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {services.map((s, i) => (
-          <motion.div
-            key={i}
-            className="p-6 border rounded-xl shadow-sm hover:shadow-lg transition"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.2, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-semibold text-blue-700">{s.title}</h3>
-            <p className="mt-2 text-gray-600">{s.desc}</p>
-          </motion.div>
-        ))}
+        <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+            <Ship className="w-10 h-10 text-indigo-600 mb-4" />
+            <h2 className="text-lg font-medium text-slate-900 dark:text-slate-100">Sea Freight</h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Full-container and less-than-container load options for bulk shipments across international waters.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+            <Truck className="w-10 h-10 text-indigo-600 mb-4" />
+            <h2 className="text-lg font-medium text-slate-900 dark:text-slate-100">Land Transport</h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Efficient trucking and rail solutions across India, ensuring last-mile and cross-border connectivity.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+            <Plane className="w-10 h-10 text-indigo-600 mb-4" />
+            <h2 className="text-lg font-medium text-slate-900 dark:text-slate-100">Air Freight</h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Time-sensitive deliveries with direct air cargo routes linking Indian and Korean hubs.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+            <Package className="w-10 h-10 text-indigo-600 mb-4" />
+            <h2 className="text-lg font-medium text-slate-900 dark:text-slate-100">Customs & Warehousing</h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Support for customs clearance, bonded storage, and secure warehousing at strategic locations.
+            </p>
+          </div>
+        </section>
       </div>
-    </motion.section>
+    </div>
   );
 }

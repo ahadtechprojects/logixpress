@@ -2,10 +2,23 @@ import { motion } from "framer-motion";
 
 export default function Testimonials() {
   const reviews = [
-    { name: "Sarah Johnson", text: "LogiXpress delivered my goods on time and in perfect condition!" },
-    { name: "David Lee", text: "Excellent tracking system and customer support." },
-    { name: "Amina Yusuf", text: "Affordable and reliable logistics partner for our business." },
-  ];
+  { name: "Rahul Sharma", text: "Fast delivery and smooth customs clearance. Very professional service." },
+  { name: "Minji Kim", text: "The updates were accurate and my package arrived safely in India." },
+  { name: "Wei Zhang", text: "Reliable company, I trust them with all my exports." },
+  { name: "Hiroshi Tanaka", text: "Customer support was excellent, they answered all my questions quickly." },
+  { name: "Ayesha Khan", text: "Affordable shipping rates compared to others. Highly recommended!" },
+  { name: "Priya Nair", text: "Delivery from Seoul to Kochi was faster than expected." },
+  { name: "Jinwoo Park", text: "Very transparent tracking system. I could follow every step." },
+  { name: "Chen Li", text: "Goods arrived without damage and packaging was secure." },
+  { name: "Yuki Sato", text: "I loved how professional the staff was during the whole process." },
+  { name: "Imran Ahmed", text: "Best shipping service I’ve used between Korea and India." },
+  { name: "Anjali Mehta", text: "They handled fragile items with extra care. Impressed!" },
+  { name: "Donghyun Choi", text: "Shipment updates were timely, and the staff was very polite." },
+  { name: "Mei Lin", text: "Smooth international shipping experience with no delays." },
+  { name: "Takeshi Nakamura", text: "Clear communication from start to finish. Will use again." },
+  { name: "Saima Baloch", text: "Efficient logistics partner. They made the process stress-free." },
+];
+
 
   return (
     <motion.section

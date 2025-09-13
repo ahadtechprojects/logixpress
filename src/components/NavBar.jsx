@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-blue-700">
-          LogiXpress
+          IndianXpress
         </Link>
 
         {/* Desktop Nav */}

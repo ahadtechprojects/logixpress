@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router"
 
 export default function CTASection() {
   return (
@@ -33,18 +34,18 @@ export default function CTASection() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
       >
-        <a
-          href="/quote"
+        <Link
+          to="/quote"
           className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100"
         >
           Get Quote
-        </a>
-        <a
-          href="/tracking"
+        </Link>
+        <Link
+          to="/tracking"
           className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
         >
           Track Now
-        </a>
+        </Link>
       </motion.div>
     </motion.section>
   );
